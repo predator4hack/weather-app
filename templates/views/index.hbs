@@ -1,0 +1,230 @@
+{{!-- <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Weather</title>
+    </head>
+    <body>
+        <nav class="navbar"></nav>
+        <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather</p>
+
+        <form action="">
+            <input placeholder="Location" type="text">
+            <button>Search</button>
+        </form>
+        <p id="message-one"></p>
+        <p id="message-two"></p>
+        </div>
+        {{>footer}}
+        <script src="./js/app.js"></script>
+    </body>
+</html> --}}
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+        />
+        <title>Home - Brand</title>
+        <link
+            rel="stylesheet"
+            href="./assets/bootstrap/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Cabin:700"
+        />
+        <link rel="stylesheet" href="./assets/fonts/font-awesome.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="icon" href="/img/weather.png" />
+    </head>
+
+    <body
+        id="page-top"
+        data-bs-spy="scroll"
+        data-bs-target="#mainNav"
+        data-bs-offset="77"
+    >
+        <nav
+            class="navbar navbar-light navbar-expand-md fixed-top"
+            id="mainNav"
+        >
+            <div class="container"><a
+                    class="navbar-brand"
+                    href="#"
+                >predator4hack</a><button
+                    data-bs-toggle="collapse"
+                    class="navbar-toggler navbar-toggler-right"
+                    data-bs-target="#navbarResponsive"
+                    type="button"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    value="Menu"
+                ><i class="fa fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item nav-link"><a
+                                class="nav-link active"
+                                href="#about"
+                            >About</a></li>
+                        <li class="nav-item nav-link"><a
+                                class="nav-link"
+                                href="#download"
+                            >Get Weather</a></li>
+                        <li class="nav-item nav-link"><a
+                                class="nav-link"
+                                href="#contact"
+                            >contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header
+            class="masthead"
+            style="background-image:url('assets/img/intro-bg.jpg');"
+        >
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h1 class="brand-heading">Weather app</h1>
+                            <p class="intro-text">Get precise weather data in
+                                just one click</p><a
+                                class="btn btn-link btn-circle"
+                                role="button"
+                                href="#about"
+                            ><i
+                                    class="fa fa-angle-double-down animated"
+                                ></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="text-center content-section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>About This APP</h2>
+                        <p>This is a open-source project created for educational
+                            purpose. This project uses<a
+                                href="https://www.mapbox.com/"
+                            > mapbox</a>&nbsp;to get the geo-location data.
+                            Along with this it uses
+                            <a
+                                href="https://weatherstack.com/documentation"
+                            >weatherstack</a>&nbsp;API to fetch the weather data
+                            of any location.</p>
+                        <p>What's Next?<br />We are planning to integrate a real
+                            time time weather data of a particular location
+                            along with the news updates.</p>
+                        <div>
+                            <h5>Tech Stacks</h5>
+                            <div class="techstacks">
+                                <div class="card">
+                                    <img
+                                        src="./assets/img/icons8-html-5-48.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="card">
+                                    <img
+                                        src="./assets/img/icons8-css3-48.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="card">
+                                    <img
+                                        src="./assets/img/icons8-javascript.gif"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="card">
+                                    <img
+                                        src="./assets/img/icons8-nodejs-48.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="text-center download-section content-section"
+            id="download"
+            style="background-image:url('assets/img/downloads-bg.jpg');"
+        >
+            <div class="container">
+                <div class="col-lg-8 mx-auto">
+                    <h1>Get Weather</h1>
+                    <p></p>
+                    <form action="">
+                        <input placeholder="Location" type="text" />
+                        <button class="btn btn-dark">Search</button>
+                    </form>
+                    <p id="message-one"></p>
+                    <p id="message-two"></p>
+                    <button
+                        class="btn btn-primary btn-lg btn-default"
+                        type="button"
+                    >view detailed</button>
+                </div>
+            </div>
+        </section>
+        <section class="text-center content-section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>Contact us</h2>
+                        <p>Feel free to contact us! You can contact us through
+                            the following social-media handles</p>
+                        <ul class="list-inline banner-social-buttons">
+                            <li class="list-inline-item">&nbsp;<button
+                                    class="btn btn-primary btn-lg btn-default"
+                                    type="button"
+                                ><i class="fa fa-google-plus fa-fw"></i><span
+                                        class="network-name"
+                                    >&nbsp; Google+</span></button></li>
+                            <li class="list-inline-item">&nbsp;<button
+                                    class="btn btn-primary btn-lg btn-default"
+                                    type="button"
+                                ><i class="fa fa-twitter fa-fw"></i><span
+                                        class="network-name"
+                                    >&nbsp;Twitter</span></button></li>
+                            <li class="list-inline-item">&nbsp;<button
+                                    class="btn btn-primary btn-lg btn-default"
+                                    type="button"
+                                ><i class="fa fa-github fa-fw"></i><span
+                                        class="network-name"
+                                    >&nbsp;github</span></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="map-clean"></div>
+        <footer>
+            <div class="container text-center">
+                <p>Copyright ©&nbsp;Brand 2022</p>
+            </div>
+        </footer>
+        <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./assets/js/grayscale.js"></script>
+        <script src="./js/app.js"></script>
+    </body>
+
+</html>

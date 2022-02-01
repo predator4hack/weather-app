@@ -5,6 +5,18 @@ const searchElement = document.querySelector("input");
 const messageOne = document.querySelector("#message-one");
 const messageTwo = document.querySelector("#message-two");
 
+document.getElementById("insta-btn").onclick = function () {
+    window.open("https://www.instagram.com/__r_o_b_o_o7/");
+};
+
+document.getElementById("linkedin-btn").onclick = function () {
+    window.open("https://www.linkedin.com/in/chandan-kumar-a8a50a198/");
+};
+
+document.getElementById("github-btn").onclick = function () {
+    window.open("https://github.com/predator4hack");
+};
+
 weatherForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
